@@ -1,4 +1,4 @@
-# Filmliste-Super-App
+# Filmliste Backend
 
 ## Team-Mitglieder:
 - Nurzhan Seitzhanov

@@ -1,5 +1,6 @@
-package de.htwberlin.webtech;
+package de.htwberlin.webtech.controller;
 
+import de.htwberlin.webtech.model.Movie;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

@@ -1,4 +1,4 @@
-package de.htwberlin.webtech;
+package de.htwberlin.webtech.model;
 
 import lombok.Getter;
 import lombok.Setter;
