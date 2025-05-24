@@ -2,7 +2,6 @@
 
 ## Team-Mitglieder:
 - Nurzhan Seitzhanov
-- Philipp Kumaigorodskii
 
 ## Projektbeschreibung
 

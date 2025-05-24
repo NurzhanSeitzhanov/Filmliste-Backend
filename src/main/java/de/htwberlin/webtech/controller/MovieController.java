@@ -14,7 +14,8 @@ public class MovieController {
         return List.of(
                 new Movie(1L, "Inception", 2010, "Science Fiction", 9.0, true, true),
                 new Movie(2L, "The Matrix", 1999, "Action", 6.6, true, false),
-                new Movie(3L, "Interstellar", 2014, "Drama", 8.5, true, true)
+                new Movie(3L, "Interstellar", 2014, "Drama", 8.5, true, true),
+                new Movie(4L, "Lion King", 1994, "Cartoon", 8.0, true, false)
         );
     }
 }
