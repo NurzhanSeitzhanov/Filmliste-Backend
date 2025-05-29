@@ -1,11 +1,17 @@
 package de.htwberlin.webtech.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
 @Setter
 @Getter
+@EqualsAndHashCode
+@ToString
+
+@Entity
 public class Movie {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
     private int year;
@@ -13,6 +19,8 @@ public class Movie {
     private double rating;
     private boolean watched;
     private boolean favorite;
+
+    public Movie() {}
 
     public Movie(Long id, String title, int year, String genre, double rating, boolean watched, boolean favorite) {
         this.id = id;
@@ -24,7 +32,6 @@ public class Movie {
         this.favorite = favorite;
     }
 
-    // Getter & Setter
 
 }
 
