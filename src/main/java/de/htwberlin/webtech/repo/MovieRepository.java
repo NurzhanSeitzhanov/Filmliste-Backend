@@ -1,4 +1,4 @@
-package de.htwberlin.webtech;
+package de.htwberlin.webtech.repo;
 
 import de.htwberlin.webtech.model.Movie;
 import org.springframework.data.repository.CrudRepository;

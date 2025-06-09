@@ -1,5 +1,6 @@
-package de.htwberlin.webtech;
+package de.htwberlin.webtech.service;
 
+import de.htwberlin.webtech.repo.MovieRepository;
 import de.htwberlin.webtech.model.Movie;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

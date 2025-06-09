@@ -1,6 +1,6 @@
 package de.htwberlin.webtech.controller;
 
-import de.htwberlin.webtech.MovieService;
+import de.htwberlin.webtech.service.MovieService;
 import de.htwberlin.webtech.model.Movie;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
