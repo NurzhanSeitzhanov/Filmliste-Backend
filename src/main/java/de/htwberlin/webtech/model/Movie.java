@@ -14,15 +14,15 @@ public class Movie {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
-    private int year;
+    private Integer year;
     private String genre;
-    private double rating;
+    private Double rating;
     private boolean watched;
     private boolean favorite;
 
     public Movie() {}
 
-    public Movie(Long id, String title, int year, String genre, double rating, boolean watched, boolean favorite) {
+    public Movie(Long id, String title, Integer year, String genre, Double rating, boolean watched, boolean favorite) {
         this.id = id;
         this.title = title;
         this.year = year;

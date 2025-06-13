@@ -83,4 +83,16 @@ class MovieServiceTest {
 
         verify(movieRepository, times(1)).deleteById(1L);
     }
+
+    @Test
+    void testSaveMovieWithoutTitleThrowsException() {
+        Movie invalidMovie = new Movie(null, "", 2024, "Drama", 7.5, false, false);
+
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            movieService.save(invalidMovie);
+        });
+
+        assertEquals("Title must not be empty", exception.getMessage());
+    }
+
 }

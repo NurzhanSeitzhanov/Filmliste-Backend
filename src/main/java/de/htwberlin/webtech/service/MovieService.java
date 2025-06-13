@@ -15,6 +15,9 @@ public class MovieService {
     private MovieRepository repo;
 
     public Movie save(Movie movie) {
+        if (movie.getTitle() == null || movie.getTitle().trim().isEmpty()) {
+            throw new IllegalArgumentException("Title must not be empty");
+        }
         return repo.save(movie);
     }
 
@@ -33,6 +36,10 @@ public class MovieService {
 
     public Movie update(Long id, Movie movieData) {
         Movie movie = repo.findById(id).orElseThrow(RuntimeException::new);
+
+        if (movieData.getTitle() == null || movieData.getTitle().trim().isEmpty()) {
+            throw new IllegalArgumentException("Title must not be empty");
+        }
 
         movie.setTitle(movieData.getTitle());
         movie.setYear(movieData.getYear());
