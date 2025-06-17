@@ -54,4 +54,9 @@ public class MovieService {
     public void delete(Long id) {
         repo.deleteById(id);
     }
+
+    public void deleteAll() {
+        repo.deleteAll();
+    }
+
 }

@@ -52,4 +52,11 @@ public class MovieController {
         movieService.delete(id);
     }
 
+    // Delete all movies
+    @DeleteMapping("/movies")
+    public void deleteAllMovies() {
+        logger.info("DELETE /movies - Deleting all movies");
+        movieService.deleteAll();
+    }
+
 }
